@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./images/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-image:radial-gradient(rgba(15, 211, 32, 1),rgba(199, 84, 84, 1))
+        }
+        .container{
+           
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+        }
+        @media screen and (orientation: landscape)
+        {
+            nav{
+                grid-row: 1;
+                grid-column: 1/4;
+                height: 50px;
+                border: 2px solid goldenrod;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px ;
+                background-color:blueviolet ;
+
+            }
+            section{
+                grid-row: 2;
+                grid-column: 1/4;
+                height: 400px;
+                border: 2px solid black;
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+            
+            
+            }
+            aside{
+                grid-row: 3;
+               grid-column: 1/4;
+                height: 400px;
+                border: 2px solid red;
+            } 
+            footer{
+                grid: 4;
+                grid-column: 1/4;
+                height: 300px;
+                border: 2px solid violet;
+            }
+
+        }
+        @media screen and (orientation: portrait)
+        {
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav3 a{
+            color :black;
+        }
+            
+        nav{
+            height: 50px;
+                border: 2px solid goldenrod;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px ;
+                background-image: linear-gradient(40deg,rgba(187, 106, 81,1),rgba(211, 23, 32, 1));
+        }
+        .SectionLeft p{
+            font: 20px solid ;
+            color: black;
+            
+        }
+        .SectionLeft 
+            h1{color:white ;
+                
+
+            }
+            .SectionRight{
+                grid-row: 1;
+                grid-column: 2;
+                background-image:radial-gradient(rgba(216, 21, 21, 1),rgba(214, 211, 36, 1))
+
+            }
+            .SectionLeft{
+                grid-row: 1;
+                grid-column: 1;margin-top: 0px;
+                 font-family:25px;
+                  height: 400px;
+                   font-weight: bold;
+                   
+                   
+                
+                    background-image: linear-gradient( 60deg, rgb(141, 41, 41), rgb(150, 150, 76));
+                    background-image: url(./images/rajgopal.jpg); 
+                    
+            
+            }
+        
+        
+    </style>
+
+   
+    <title>My first portfolio</title>
+</head>
+<body>
+    <div class="cotainer">
+        <nav style="margin:5px;">
+            <div class="nav1">
+                <img src="./images/logo1.png" height="40px" width="40px" alt="logo here">
+
+            </div>
+            <div class="nav2" style="font: 25px bold black; padding:20px;   padding: 20px;">
+                <span><a href="#" > Home</a></span> 
+                <span><a href="#">Education</a></span>                                                                                                                            
+                <span><a href="#" >Projects</a></span>
+                <span><a href="#" >Works</a></span>
+
+            </div>
+            <div class="nav3">
+                <span class="bi bi-facebook"><a  href="https://www.facebook.com/" ></span>
+                <span  class="bi bi-whatsapp"><a href="https://www.whatsapp.com/"></span>
+                <span class="bi bi-google" ><a href="https://www.google.com/" ></span>
+                <span class="bi bi-instagram"><a href="https://www.instagram.com/" ></span>
+
+            </div>
+
+        </nav>
+        <section>
+        <div class="SectionLeft" >
+        <h1>About Me..</h1>
+        <p>Hi </p>
+        <p>I am a UI full stack developer </p>
+        <p>
+            I design user interface in a very reasonable <strong>Cost</strong>
+
+        </p><p>
+            and make clients Happy
+        </p>
+        </div>
+        <div class="SectionRight" style="height: 400px;">
+            
+
+        </div>
+
+        </section>
+        <aside>
+
+        </aside>
+        <footer>
+
+        </footer>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
